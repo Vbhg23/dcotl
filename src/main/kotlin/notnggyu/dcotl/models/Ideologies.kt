@@ -12,7 +12,7 @@ data class Ideologies(
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     var name: String? = null,
-    var imageURL: String? = null,
+    var image_url: String? = null,
     var description: String? = null,
     var subtypes: String? = null,
     var id: Long? = null,

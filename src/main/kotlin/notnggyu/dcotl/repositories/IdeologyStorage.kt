@@ -3,4 +3,6 @@ package notnggyu.dcotl.repositories
 import notnggyu.dcotl.models.Ideologies
 import org.springframework.data.jpa.repository.JpaRepository
 
-interface IdeologyStorage: JpaRepository<Ideologies?, Long?>
+interface IdeologyStorage: JpaRepository<Ideologies?, Long?> {
+    fun findByName(name: String): List<Ideologies?>
+}
